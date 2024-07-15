@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Ebus Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard - Ebus Management System</h1>
+        <form id="post-bus-form">
+            <h2>Post Bus Information</h2>
+            <label for="busName">Bus Name:</label>
+            <input type="text" id="busName" name="busName" required>
+            <label for="busType">Bus Type:</label>
+            <input type="text" id="busType" name="busType" required>
+            <label for="busContact">Contact:</label>
+            <input type="text" id="busContact" name="busContact" required>
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <button type="submit">Post Bus</button>
+        </form>
+        
+        
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
